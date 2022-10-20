@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_mesh"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hfad.languageapp.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_englishFragment"
+            app:destination="@id/englishFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_frenchFragment"
+            app:destination="@id/frenchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_spanishFragment"
+            app:destination="@id/spanishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/englishFragment"
+        android:name="com.hfad.languageapp.englishFragment"
+        android:label="fragment_english"
+        tools:layout="@layout/fragment_english" />
+    <fragment
+        android:id="@+id/frenchFragment"
+        android:name="com.hfad.languageapp.frenchFragment"
+        android:label="fragment_french"
+        tools:layout="@layout/fragment_french" />
+    <fragment
+        android:id="@+id/spanishFragment"
+        android:name="com.hfad.languageapp.spanishFragment"
+        android:label="fragment_spanish"
+        tools:layout="@layout/fragment_spanish" />
+</navigation>
